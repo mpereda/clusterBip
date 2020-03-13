@@ -52,13 +52,16 @@ In the dendrogram, you'll see in colors different groups (clusters) of products 
 	
 
     results[1]
+![dataHead](first_example/dendrogram.png?raw=true "Title")
 
 You can obtain an ordered list of the cluster membership (for each entitie, the list shows the ID of the cluster it belongs)
 	
 
     results[0]
+![dataHead](first_example/cluster_membership.png?raw=true "Title")
 
 The normalized susceptibility plot as a function of the p-values of the dendrogram can be shown as:
     	
 
     results[3]
+![dataHead](first_example/susceptibility_plot.png?raw=true "Title")
