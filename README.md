@@ -19,7 +19,9 @@ clusterBip is a Python library to cluster bipartite data sets based on the stati
 **example of usage:**
 
     from hierarchical_bipartite import hierarchical_bipartite
-       
+       	#!/usr/bin/env python3
+	# nth-item.py
+	
 	# import some data to play with
 
 	# Let's analyze the shopping list of 100 people choosing among 20 products to buy
