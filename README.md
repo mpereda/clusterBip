@@ -35,6 +35,8 @@ Let's explore the data
 
     print(datos.head(3))
 
+![dataHead](first_example/dataHead.png?raw=true "Title")
+
 Ensure your matrix has the entities you want to cluster as rows, and the features as columns:
 
     datos=datos.T
