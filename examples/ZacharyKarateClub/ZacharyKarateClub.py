@@ -5,6 +5,8 @@ Created on Fri Mar 13 14:47:23 2020
 
 @author: mariapereda
 """
+import pandas as pd
+from hierarchical_bipartite_color import hierarchical_bipartite_color
 
 datos = pd.read_csv('zachary_A_diagonal.csv', dtype='category', sep=';', header=None)  # read file 
 labels1=[str(i+1) for i in range(datos.shape[0])]
