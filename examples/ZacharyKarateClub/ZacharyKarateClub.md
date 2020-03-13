@@ -20,7 +20,7 @@ Then we just call the function:
     results = hierarchical_bipartite_color(datos,labels1,gt, plot=True,indexes=True, xFontSize=8)
 
 
-In the dendrogram, you'll see in colors different groups (clusters) of products that are more likely to be purchased together
+In the dendrogram, you'll see the colors of the two groups of people, and the labels are now colored according to the ground truth:
 	
     results[1]
 ![ZKC_dendro](ZKC_dendro.png?raw=true "Title")
