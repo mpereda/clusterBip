@@ -23,4 +23,4 @@ Then we just call the function:
 In the dendrogram, you'll see in colors different groups (clusters) of products that are more likely to be purchased together
 	
     results[1]
-![dataHead](first_example/ZKC_dendro.png?raw=true "Title")
+![ZKC_dendro](ZKC_dendro.png?raw=true "Title")
