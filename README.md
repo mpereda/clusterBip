@@ -1,6 +1,7 @@
-
-
 clusterBip written by Ignacio Tamarit, María Pereda, and Jose A. Cuesta
+
+# clusterBip
+clusterBip is a Python fuction to cluster bipartite data sets based on the statistical significance of coincidences.
 
 # LICENSE
 This python fuction is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -9,12 +10,10 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
-# clusterBip
-clusterBip is a Python fuction to cluster bipartite data sets based on the statistical significance of coincidences. 
-
-## Python version and dependencies
+# Python version and dependencies
 It works both for Python 2.7 and 3.7.
 You will need to have installed the following libraries: numpy, scipy, matplotlib.
+
 
 # Quickstart
 **install:**
