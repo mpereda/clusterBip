@@ -12,7 +12,7 @@ You should have received a copy of the GNU General Public License along with thi
 # clusterBip
 clusterBip is a Python fuction to cluster bipartite data sets based on the statistical significance of coincidences. 
 
-# Python version and dependencies
+## Python version and dependencies
 It works both for Python 2.7 and 3.7.
 You will need to have installed the following libraries: numpy, scipy, matplotlib.
 
