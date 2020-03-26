@@ -26,7 +26,7 @@ datos=datos.astype('category')
 
 # We load the ground truth (partition we want to use to color the entities labels)
 clusters = pd.read_csv('zachary_gt.txt', dtype='int', sep=' ', delimiter='\t', header=None) #red original Zackary
-gt = dict(zip(labels1, clusters[0]))
+gt = dict(zip(labels1, clusters[0])) # We save the ground truth in a dictionary
 
 
 #We apply the algorithm
