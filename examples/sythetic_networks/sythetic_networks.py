@@ -51,13 +51,13 @@ results = hierarchical_bipartite(data2,labels1,plot=True,indexes=True, xFontSize
 
 #%%
 import random
-random.seed(2)
+random.seed(55)
 
 ## In Bipartite network with some rewiring
 features = 400
 entities = 100
 
-data3 = random_bipartite(features,entities,p0=0.5,p_rewiring=0.35)
+data3 = random_bipartite(features,entities,p0=0.5,p_rewiring=0.28)
 labels1=[str(i) for i in range(entities)]
 
 results = hierarchical_bipartite(data3,labels1,plot=True,indexes=True, xFontSize=5)
