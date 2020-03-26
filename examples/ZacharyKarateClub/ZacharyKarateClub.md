@@ -16,7 +16,7 @@ We load both the bipartite network and its ground truth:
     for i in range(len(datos)):
         for j in range(len(datos[i])):  
             if i==j:
-                datos2[i][j]=1
+                datos[i][j]=1
 
     # The dataset need to have categorical variables
     datos=datos.astype('category')
