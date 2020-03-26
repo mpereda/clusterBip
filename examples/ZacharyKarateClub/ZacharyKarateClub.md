@@ -8,8 +8,18 @@ We are goint to use the function *hierarchical_bipartite_color* to color the lab
        
 We load both the bipartite network and its ground truth:
 
-    datos = pd.read_csv('zachary_A_diagonal.csv', dtype='category', sep=';', header=None)  # read file 
+    # We load the adjacency matrix of the original network
+    datos = pd.read_csv('Zackary_original.csv', dtype='int', sep=',', header=None) 
     labels1=[str(i+1) for i in range(datos.shape[0])]
+
+    #We set the principal diagonal to ones
+    for i in range(len(datos)):
+        for j in range(len(datos[i])):  
+            if i==j:
+                datos[i][j]=1
+
+    # The dataset need to have categorical variables
+    datos=datos.astype('category')
 
     clusters = pd.read_csv('zachary_gt.txt', dtype='int', sep=' ', delimiter='\t', header=None) #red original Zackary
     # We save the ground truth in a dictionary
