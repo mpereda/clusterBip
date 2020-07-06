@@ -184,7 +184,7 @@ def hierarchical_bipartite(A, my_labels, indexes=True, threshold='Susceptibility
                 above_threshold_color="grey",
                 )
         plt.gca().invert_yaxis()
-        plt.ylim(ymin=10**(round(np.log10(min(Z[:,2])))-1),ymax=1)
+        plt.ylim(ymin=10**(round(np.log10(max(min(Z[:,2]),1E-299)))-1),ymax=1) #Lim of vertical axis is 1E-300
         #plt.ylim(ymin=1e-300,ymax=1)
         plt.tight_layout()
         #plt.savefig('dendogram_FET.pdf',dpi=900)
