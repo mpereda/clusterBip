@@ -180,14 +180,14 @@ def hierarchical_bipartite_color(A, my_labels, gt, indexes=True, threshold='Susc
                 Z,
                 labels=my_labels,
                 color_threshold = my_threshold,
-                #distance_sort='ascending',
+                distance_sort='ascending',
                 leaf_rotation=90.,  # rotates the x axis labels
                 leaf_font_size=xFontSize,  # font size for the x axis labels
                 above_threshold_color="grey",
                 )
         plt.gca().invert_yaxis()
         plt.ylim(ymin=10**(round(np.log10(min(Z[:,2])))-1),ymax=1)
-        plt.ylim(ymin=1e-300,ymax=1)
+        #plt.ylim(ymin=1e-300,ymax=1)
         plt.tight_layout()
         ax = plt.subplot(111)
         
