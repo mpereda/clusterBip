@@ -38,6 +38,21 @@ labels1=[str(i) for i in range(entities)]
 
 results = hierarchical_bipartite(data2,labels1,plot=True,indexes=True, xFontSize=5)
 
+
+#%% 
+
+## Perfectly bipartite: Two Pref Attachment bipartite networks joined
+
+from PreferentialAttachment_bipartite import PreferentialAttachment_bipartite
+
+num_entities = 100
+
+data2 = PreferentialAttachment_bipartite(num_entities, 50, p0 = 0.5, p_rewiring=0)
+data2[int(num_entities-1),0]=0.99 #Añadimos un enlace entre los dos clusters
+labels1=[str(i) for i in range(num_entities)]
+
+results = hierarchical_bipartite(data2,labels1,plot=True,indexes=True, xFontSize=5)
+
 #%%
 
 ## Fully connected network
@@ -64,7 +79,7 @@ results = hierarchical_bipartite(data3,labels1,plot=True,indexes=True, xFontSize
 
 
 
-#%% Figure 1 panel D
+#%% Figure 2
 
 ## Bipartite networks with several p_rewiring
 from hierarchical_bipartite import hierarchical_bipartite
