@@ -19,7 +19,7 @@ You will need to have installed the following libraries: numpy, scipy, matplotli
 # Quickstart
 **install:**
 
-    You do not need to install anything.
+    You not need to install the libraries at requirements.txt
 
 **example of usage:**
 
