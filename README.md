@@ -16,7 +16,7 @@ It works both for Python 2.7 and 3.7.
 You will need to have installed the following libraries: numpy, scipy, matplotlib.
 
 
-# Quickstart :beginner:
+# Quickstart :rocket:
 **install:**
 
     You need to install the libraries at requirements.txt
