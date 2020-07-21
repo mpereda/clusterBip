@@ -191,7 +191,7 @@ def hierarchical_bipartite_color(A, my_labels, gt, indexes=True, threshold='Susc
         plt.tight_layout()
         ax = plt.subplot(111)
         
-        eje_x=[int(ticklabel.get_text()) for ticklabel in ax.get_xticklabels()]
+        eje_x=[ticklabel.get_text() for ticklabel in ax.get_xticklabels()]
         ground_truth=list(gt.values())
         
         NUM_COLORS = len(list(np.unique(ground_truth)))
